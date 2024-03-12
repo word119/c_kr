@@ -1,0 +1,1 @@
+void diy_strcat(char s[], char t[]);
