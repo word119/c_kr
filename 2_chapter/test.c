@@ -23,16 +23,23 @@ void diy_strcat(char s[], char t[]){
     while((s[i++] = t[j++]) != '\0');
 }
 
-void diy_squeeze(char s1[], char s2[]){
-    int i, j, k;
-    for ()
+int main(int argc, char *argv[]){
+    // char s[] = "he";
+    // char t[] = "_she";
+    // diy_strcat(s, t);
+    // printf("new string: %s\n", s);
 
-}
+    // unsigned x = 100;
+    // printf("there are %d bit-1 of %d\n", bitcount(x), x);
 
-int main(){
-    char s[] = "he";
-    char t[] = "_she";
-    diy_strcat(s, t);
-    printf("new string: %s\n", s);
+    int array[77];
+    int i;
+    for (i = 0; i < 77; i++){
+        array[i] = i*100;
+    }
+
+    for (i = 0; i < 77; i++){
+        printf("%6d%c", array[i], (i%10 == 9 || i==76) ? '\n' : ' ');
+    }
     return 0;
 }
