@@ -1,6 +1,6 @@
 #include <ctype.h>
 
-double atof(char s[]){
+double diy_atof(char s[]){
     double val, power;
     int i, sign;
 
@@ -10,7 +10,7 @@ double atof(char s[]){
     if (s[i] == '+' || s[i] == '-')
         i++;
     for (val = 0.0; isdigit(s[i]); i++){
-        val = 10 * val + s[i] - '\0';
+        val = 10 * val + s[i] - '0';
     }
     if (s[i] == '.')
         i++;
