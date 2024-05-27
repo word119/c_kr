@@ -1,4 +1,4 @@
-/*getline: strore line into s and return the length of line*/
+/*getline: store line into s and return the length of line*/
 int getline(char *s, int lim)
 {
     int c, i;

@@ -1,4 +1,4 @@
-#include "../utility/getline.h"
+#include "../utility/utility.h"
 
 #define MAXLEN 1000
 
@@ -20,4 +20,11 @@ int readlines(char *lineptr[], int maxlines)
         return nlines;
     }
 
+}
+
+/* writelines: write output lines*/
+void writelines(char *lineptr[], int nlines)
+{
+    while (nlines-- > 0)
+        printf("%s\n", *lineptr++);
 }
