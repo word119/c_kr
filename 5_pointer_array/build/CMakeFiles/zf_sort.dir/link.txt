@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/zf_sort.dir/5.6_pointers_in_array.c.o CMakeFiles/zf_sort.dir/lib/lines.c.o CMakeFiles/zf_sort.dir/lib/qsort.c.o -o zf_sort 
