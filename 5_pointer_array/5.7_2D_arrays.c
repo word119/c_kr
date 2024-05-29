@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 /* leap year */
 static char daytab[2][13] = {
@@ -17,24 +18,26 @@ int main()
     int year, month, day;
     int yearday;
     int *pmonth, *pday;
-    pmonth = NULL;
-    pday = NULL;
+    pmonth = (int *)malloc(sizeof(int *));
+    pday = (int *)malloc(sizeof(int *));
     /* type the date to get the yearday */
-    printf("enter year:");
+    printf("year:");
     scanf("%d", &year);
-    printf("enter month:");
+    printf("month:");
     scanf("%d", &month);
-    printf("enter day:");
+    printf("day:");
     scanf("%d", &day);
     yearday = day_of_year(year, month, day);
-    printf("In year %d, it is the %d.day\n\n", year, yearday);
+    printf("already the %d.day of %d\n\n", yearday, year);
     /* type the yearday to get the date*/
-    printf("enter year:");
+    printf("year:");
     scanf("%d", &year);
-    printf("enter days of year:");
+    printf("days of year:");
     scanf("%d", &yearday);
     month_day(year, yearday, pmonth, pday);
-    printf("the %d. day of year %d is %d. month and %d day", yearday, year, *pmonth, *pday);
+    printf("%d days of %d: %4d-%02d-%02d\n", yearday, year, year, *pmonth, *pday);
+    free(pmonth);
+    free(pday);
 
     return 0;
 }
