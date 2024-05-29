@@ -1,0 +1,5 @@
+zf
+xiaomi
+huawei
+apple
+samsung
