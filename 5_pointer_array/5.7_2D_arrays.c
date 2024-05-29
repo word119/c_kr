@@ -18,8 +18,8 @@ int main()
     int year, month, day;
     int yearday;
     int *pmonth, *pday;
-    pmonth = (int *)malloc(sizeof(int *));
-    pday = (int *)malloc(sizeof(int *));
+    pmonth = (int *)malloc(sizeof(int));
+    pday = (int *)malloc(sizeof(int));
     /* type the date to get the yearday */
     printf("year:");
     scanf("%d", &year);
