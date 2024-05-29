@@ -1,3 +1,0 @@
-/home/yh/C-Programming-K-R/5_pointer_array/build/CMakeFiles/zf_sort.dir
-/home/yh/C-Programming-K-R/5_pointer_array/build/CMakeFiles/edit_cache.dir
-/home/yh/C-Programming-K-R/5_pointer_array/build/CMakeFiles/rebuild_cache.dir
