@@ -1,7 +1,9 @@
-cmake_minimum_required(VERSION 3.9)
+# 5.11_pointer_function.c
 
-project(sort_program)
+cmake_minimum_required(VERSION 3.10)
+
+project(find_with_pointer)
 
 include_directories(lib)
 
-add_executable(sort_DIY 5.6_pointers_in_array.c lib/lines.c lib/qsort.c)
+add_executable(find_func_pointer 5.11_pointer_function.c lib/qsort_function_pointer.c lib/lines.c)
