@@ -1,9 +1,4 @@
-# 5.11_pointer_function.c
-
-cmake_minimum_required(VERSION 3.10)
-
-project(sort_with_pointer)
-
-include_directories(lib)
-
-add_executable(sort 5.11_pointer_function.c lib/qsort_function_pointer.c lib/lines.c)
+cmake_minimum_required(VERSION 3.9)
+project(sort_nrfd_p)
+include_directories(lib_exercise517)
+add_executable(powerful_sort 517_sort_nrfd_p.c lib_exercise517/qsort.c lib_exercise517/lines.c)
