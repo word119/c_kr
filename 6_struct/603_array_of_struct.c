@@ -1,3 +1,8 @@
+/**
+ * type a c source code, this app would analyse the keyword
+ */
+
+
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
