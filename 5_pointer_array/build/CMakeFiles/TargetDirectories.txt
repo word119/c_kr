@@ -1,3 +1,0 @@
-/home/yh/c_kr/5_pointer_array/build/CMakeFiles/powerful_sort.dir
-/home/yh/c_kr/5_pointer_array/build/CMakeFiles/edit_cache.dir
-/home/yh/c_kr/5_pointer_array/build/CMakeFiles/rebuild_cache.dir

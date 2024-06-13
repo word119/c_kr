@@ -76,7 +76,8 @@ int getword(char *word, int lim){
     void ungetch(int);
     char *w = word;
 
-    while (isspace(c=getch()));
+    while (isspace(c=getch()))
+        ;
     if (c != EOF)
         *w++ = c;
     if (!isalpha(c)){
