@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/powerful_sort.dir/517_sort_nrfd_p.c.o CMakeFiles/powerful_sort.dir/lib_exercise517/qsort.c.o CMakeFiles/powerful_sort.dir/lib_exercise517/lines.c.o -o powerful_sort 
