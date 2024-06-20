@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/binary_tree.dir/main.c.o CMakeFiles/binary_tree.dir/lib/utility.c.o -o binary_tree 

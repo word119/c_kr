@@ -1,0 +1,3 @@
+/home/yh/json_server/build/CMakeFiles/binary_tree.dir
+/home/yh/json_server/build/CMakeFiles/edit_cache.dir
+/home/yh/json_server/build/CMakeFiles/rebuild_cache.dir

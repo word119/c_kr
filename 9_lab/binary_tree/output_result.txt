@@ -1,0 +1,30 @@
+top_01 occurrence times 32:	       God,	in lines: 01 02 03 04 05 06 07 08 09 10 11 12 14 16 17 18 20 21 22 24 25 26 27 28 29 31 
+top_02 occurrence times 19:	     earth,	in lines: 01 02 11 12 15 17 20 22 24 25 26 28 29 30 
+top_03 occurrence times 12:	     every,	in lines: 21 25 26 28 29 30 31 
+top_04 occurrence times 11:	    waters,	in lines: 02 06 07 09 10 20 21 22 
+top_05 occurrence times 11:	     after,	in lines: 11 12 21 24 25 26 
+top_06 occurrence times 10:	     light,	in lines: 03 04 05 15 16 17 18 
+top_07 occurrence times 10:	      upon,	in lines: 02 11 15 17 25 26 28 29 30 
+top_08 occurrence times 10:	      over,	in lines: 18 26 28 
+top_09 occurrence times 10:	      said,	in lines: 03 06 09 11 14 20 24 26 28 29 
+top_10 occurrence times  9:	 firmament,	in lines: 06 07 08 14 15 17 20 
+top_11 occurrence times  9:	       day,	in lines: 05 08 13 14 16 18 19 23 31 
+top_12 occurrence times  9:	      kind,	in lines: 11 12 21 24 25 
+top_13 occurrence times  8:	      them,	in lines: 14 15 17 22 26 27 28 
+top_14 occurrence times  8:	       Let,	in lines: 03 06 09 11 14 20 24 26 
+top_15 occurrence times  8:	       its,	in lines: 11 12 21 24 25 
+top_16 occurrence times  7:	       let,	in lines: 06 09 14 15 20 22 26 
+top_17 occurrence times  7:	       saw,	in lines: 04 10 12 18 21 25 31 
+top_18 occurrence times  7:	      good,	in lines: 04 10 12 18 21 25 31 
+top_19 occurrence times  6:	   evening,	in lines: 05 08 13 19 23 31 
+top_20 occurrence times  6:	     thing,	in lines: 24 25 26 28 30 31 
+top_21 occurrence times  6:	      seed,	in lines: 11 12 29 
+top_22 occurrence times  6:	   morning,	in lines: 05 08 13 19 23 31 
+top_23 occurrence times  6:	      fowl,	in lines: 20 21 22 26 28 30 
+top_24 occurrence times  6:	    heaven,	in lines: 01 09 14 15 17 20 
+top_25 occurrence times  6:	        he,	in lines: 05 10 16 27 31 
+top_26 occurrence times  5:	     forth,	in lines: 11 12 20 21 24 
+top_27 occurrence times  5:	   created,	in lines: 01 21 27 
+top_28 occurrence times  5:	    called,	in lines: 05 08 10 
+top_29 occurrence times  5:	      from,	in lines: 04 06 07 14 18 
+top_30 occurrence times  5:	     which,	in lines: 07 21 29 
