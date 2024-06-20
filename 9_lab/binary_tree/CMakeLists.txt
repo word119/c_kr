@@ -4,6 +4,4 @@ project(binary_tree)
 
 include_directories(lib)
 
-set(SOURCE_FILES main.c lib/utility.c)
-
-add_executable(binary_tree ${SOURCE_FILES})
+add_executable(binary_tree main.c lib/utility.c)

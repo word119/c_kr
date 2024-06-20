@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/yh/json_server/build",
+  "command": "/usr/bin/cc -I/home/yh/json_server/lib -g -o CMakeFiles/binary_tree.dir/main.c.o -c /home/yh/json_server/main.c",
+  "file": "/home/yh/json_server/main.c"
+},
+{
+  "directory": "/home/yh/json_server/build",
+  "command": "/usr/bin/cc -I/home/yh/json_server/lib -g -o CMakeFiles/binary_tree.dir/lib/utility.c.o -c /home/yh/json_server/lib/utility.c",
+  "file": "/home/yh/json_server/lib/utility.c"
+}
+]

@@ -1,31 +1,47 @@
 #include <utility.h>
-// #define TOP     20          // print top 10
-/* print top 10 words sorted in decreasing order */
-int main(int argc, char **argv)
-{
+
+Treeptr addtree(Treeptr, char *);
+void treeprint(Treeptr);
+
+int main() {
     Treeptr root;
     char word[MAXWORD];
-    int i;
-    int linenum = 1;
-    Linklist tmp;
 
     root = NULL;
-    /* register input words in binary tree */
     while (getword(word, MAXWORD) != EOF)
-        if (isalpha(word[0]) && noiseword(word) == -1) // filter some noise word like "a, the, and"
-            root = addtree(root, word, linenum);
-        else if (word[0] == '\n')
-            linenum++;
-    treestore(root);
-    sortlist();
-    /* print top n words with its occurrence times*/
-    for (i = 0; i <= atoi(argv[1])-1; i++) {
-        printf("top_%02d occurrence times %2d:\t%10s,\tin lines: ", i+1, list_ptr[i]->count, list_ptr[i]->word);
-        /* print its cross-referencer */
-        for (tmp = list_ptr[i]->lines; tmp != NULL; tmp = tmp->ptr)
-            printf("%02d ", tmp->lnum);
-        printf("\n");
-
-    }
+        if (isalpha(word[0]))
+            root = addtree(root, word);
+    treeprint(root);
     return 0;
+}
+
+
+/* addtree: add a node with w, at or below p */
+Treeptr addtree(Treeptr p, char *w)
+{
+    int cond;
+    /* a new word has arrived */
+    if (p == NULL) {
+        p = talloc(); // make a new node
+        p->word = strdup_diy(w);
+        p->count = 1;
+        p->left = p->right = NULL;
+    } else if ((cond = strcmp(w, p->word)) == 0)
+        p->count++;     //repeat word
+    else if (cond < 0)  //less than into left subtree
+        p->left = addtree(p->left, w);
+    else                //greater than into right subtree
+        p->right = addtree(p->right, w);
+    
+    return p;
+}
+
+/* treeprint: in-order print of tree p */
+void treeprint(Treeptr p)
+{
+    if (p != NULL) {
+        treeprint(p->left);
+        printf("%4d\t%s\n", p->count, p->word);
+        treeprint(p->right);
+    }
 }
