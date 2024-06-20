@@ -7,7 +7,7 @@ static int bufp = 0;        // next free position in buf
 /* get a (possibly pushed back) character */
 int getch()
 {
-    return (bufp > 0) ? buf[bufp--] : getchar();
+    return (bufp > 0) ? buf[--bufp] : getchar();
 }
 
 /* push character back on input */
