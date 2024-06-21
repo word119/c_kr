@@ -17,28 +17,21 @@ void ungetch(char c)
         buf[bufp++] = c;
 }
 // comment natation style 1: /* */
-int comment_style1()
+int comment()
 {
     int c;
     /* skip over */
     while ((c = getch()) != EOF)
-        if (c == '*')
+        if (c == '*') {
             if ((c = getch()) == '/')
                 break;
             else
                 ungetch(c);
+        } else if (c == '\n') //
+            break;   
     return c;
 }
-// comment notation style 2: //
-int comment_style2()
-{
-    int c;
-    /* skip over until \n */
-    while ((c = getch()) != EOF)
-        if( c == '\n')
-            break;    
-    return c;
-}
+
 
 /* getword: read a word from input and store it in 1st parameter*/
 int getword(char *word, int lim)
@@ -75,10 +68,8 @@ int getword(char *word, int lim)
     }
     /* condition 3: comments, skip over comments */
     else if (c == '/') {
-        if ((d = getch()) == '*')
-            c = comment_style1();
-        else if (d == '/') {
-            c = comment_style2();
+        if ((d = getch()) == '*' || d == '/')
+            c = comment();
         } else {
             ungetch(d);
         }
