@@ -3,10 +3,10 @@
 typedef char *string;
 typedef struct tnode *Treeptr;
 typedef struct tnode {
-    string word;     // points to the text
-    int match;      // match found
-    Treeptr left;   // left child
-    Treeptr right;  // right child
+    string word;     /* points to the text */
+    int match;      /*  match found */
+    Treeptr left;   /* left child */
+    Treeptr right;  /* right child */
 } Treenode;
 
 #define YES     1
@@ -23,8 +23,8 @@ int main(int argc, char **argv)
 {
     Treeptr root;
     char word[MAXWORD];
-    int found = NO;     // YES if match was found
-    int num;            // the first n identical characters
+    int found = NO;     /* YES if match was found */
+    int num;            /* the first n identical characters */ 
 
     num = (--argc > 0 && (*++argv)[0] == '-') ? atoi(argv[0]+1) : 6;
     root = NULL;
@@ -51,18 +51,18 @@ Treeptr addtreex(Treeptr tree_ptr, string word_new, int num, int *found)
 {
     int condition;
 
-    // a new word has arrived
+    /* a new word has arrived */
     if (tree_ptr == NULL) {
-        tree_ptr = talloc();       // make a new node
+        tree_ptr = talloc();       /* make a new node */
         tree_ptr->word = strdup(word_new);
         tree_ptr->match = *found;
         tree_ptr->left = tree_ptr->right = NULL;
     }
-    // less than, add to left of tree 
+    /* less than, add to left of tree */
     else if ((condition = compare(word_new, tree_ptr, num, found)) < 0) {
         tree_ptr->left = addtreex(tree_ptr->left, word_new, num, found);
     } 
-    // greater than, add to right of tree
+    /* greater than, add to right of tree */
     else if (condition > 0)
         tree_ptr->right = addtreex(tree_ptr->right, word_new, num, found);
 
@@ -81,7 +81,7 @@ int compare(string word_new, Treeptr tree_ptr, int num, int *found)
         if (*word_new == '\0') 
             return 0;
     }
-    // identical in first num chars?
+    /* identical in first num chars? */
     if (i >= num) {
         *found = YES;
         tree_ptr->match = YES;

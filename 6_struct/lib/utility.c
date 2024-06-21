@@ -22,13 +22,11 @@ int comment()
     int c;
     /* skip over */
     while ((c = getch()) != EOF)
-        if (c == '*') {
+        if (c == '*')
             if ((c = getch()) == '/')
                 break;
             else
                 ungetch(c);
-        } else if (c == '\n') //
-            break;   
     return c;
 }
 
@@ -68,14 +66,11 @@ int getword(char *word, int lim)
     }
     /* condition 3: comments, skip over comments */
     else if (c == '/') {
-        if ((d = getch()) == '*' || d == '/')
+        if ((d = getch()) == '*')
             c = comment();
-        } else {
+        else
             ungetch(d);
-        }
-
     }
-
     *w = '\0';
     return c;
 }
