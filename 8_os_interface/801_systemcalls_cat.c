@@ -5,6 +5,17 @@
 
 void error(char *fmt, ...);
 
+/* filecopy: copy file idf to file ofd */
+void filecopy(int ifd, int ofd)
+{
+    int n;
+    char buf[BUFSIZ];
+
+    while ((n = read(ifd, buf, BUFSIZ)) > -1) {
+        if (write(ofd, buf, n) != n)
+            error("cat: write error");
+    }
+}
 /* cat: concatenate files - read/write/open/close */
 int main(int argc, char **argv)
 {
@@ -23,17 +34,4 @@ int main(int argc, char **argv)
             }
         }
     return 0;
-
-}
-
-/* filecopy: copy file idf to file ofd */
-void filecopy(int ifd, int ofd)
-{
-    int n;
-    char buf[BUFSIZ];
-
-    while ((n = read(ifd, buf, BUFSIZ)) > 0) {
-        if (write(ofd, buf, n) != n)
-            error("cat: write error");
-    }
 }
